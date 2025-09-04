@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Lit + TS</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="/src/components/dot-url-slug.ts"></script>
+    <script type="module" src="/src/components/dot-template-selector.ts"></script>
+    <script type="module" src="/src/components/dot-youtube-search.ts"></script>
+  </head>
+  <body>
+    <dot-url-slug
+      variable-id="title"
+      context='{"title":"Hello World"}'>
+    </dot-url-slug>
+    <hr />
+    <dot-template-selector
+      variable-id="template"
+      context='{"template":"1"}'>
+    </dot-template-selector>
+    <hr />
+    <dot-youtube-search
+      variable-id="youtube"
+      context='{"youtube":"1"}'
+      apiKey="AIzaSyCxY1REi_queaJ3o_-CuaYMHjSnFhd1GQ8"
+      channelId=""
+      max-results="10"
+    ></dot-youtube-search>
+  </body>
+</html>

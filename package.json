@@ -1,0 +1,22 @@
+{
+  "name": "dotcms-wc-boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode development",
+    "dev:prod": "vite --mode production",
+    "build": "tsc && vite build --mode production",
+    "build:dev": "tsc && vite build --mode development",
+    "preview": "vite preview",
+    "preview:dev": "vite preview --mode development"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "lit": "^3.3.1"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3",
+    "vite": "^7.1.2"
+  }
+}
